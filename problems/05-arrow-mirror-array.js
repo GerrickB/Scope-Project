@@ -10,6 +10,12 @@ mirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a
 
 const mirrorArray = (array) => {
   // Your code here
+  let mirrored = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    let el = array[i];
+    mirrored.push(el);
+  }
+  return [...array, ...mirrored];
 };
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
