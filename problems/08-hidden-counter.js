@@ -23,6 +23,14 @@ function hiddenCounter() {
     count++;
     return count;
   };
+
+  // same as this
+  // function counter() {
+  //   count++;
+  //   return count;
+  // }
+
+  // return counter;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
