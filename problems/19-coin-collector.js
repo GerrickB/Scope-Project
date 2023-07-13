@@ -26,6 +26,34 @@ Example 3:
 ***********************************************************************/
 function coinCollector(numCoins) {
   // Your code here
+  numTimes = numCoins;
+  coinArr = [];
+
+  // return function(num) {
+  //   if (numTimes > 0) {
+  //     coinArr.push(num);
+  //     numTimes--;
+  //   }
+  //   if (numTimes === 0) {
+  //     return coinArr;
+  //   }
+
+  // }
+
+  function collectCoin(num) {
+    if (numTimes > 0) {
+      coinArr.push(num);
+      numTimes--;
+      if (numTimes !== 0) {
+        return collectCoin;
+      } else {
+        return coinArr;
+      }
+    }
+
+  }
+
+  return collectCoin;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
